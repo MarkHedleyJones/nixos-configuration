@@ -63,6 +63,7 @@
     i3status
     i3lock
     i3blocks
+    polybarFull
   ];
   
   
@@ -95,29 +96,33 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  nixpkgs.config.allowBroken = true; # Adding because of broken pcl package
+
   environment.systemPackages = with pkgs; [
-    wget
-    vim
-    firefox
-    git
-    sublime3 
-    sublime-merge
-    openssh
-    gnome3.gnome-tweak-tool
-    gimp
-    inkscape
-    docker
-    nvidia-docker
-    ibus-engines.mozc
-    python3
-    polybar
     arandr
+    blender
     clang-tools
     ddcutil
+    docker
+    firefox
+    gimp
+    git
+    gnome3.gnome-tweak-tool
+    gnome3.meld
+    htop
+    ibus-engines.mozc
+    inkscape
     linuxPackages.ddcci-driver
+    lxappearance
+    nvidia-docker
+    opencv
     pavucontrol
+    python3
     ranger
+    sublime-merge
+    sublime3
+    tdesktop  # Telegram Desktop
+    vim
+    wget
   ];
 
   fonts.fonts = with pkgs; [
@@ -127,15 +132,18 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
+
+  programs.seahorse.enable = true;
 
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  services.gnome3.gnome-keyring.enable = true;
   services.udev.extraRules = ''
   KERNEL=="i2c-[0-9]*", MODE="0660"  
   '';
