@@ -53,7 +53,7 @@
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
-  
+  programs.dconf.enable = true;
   # Add i3 (with gaps)
   environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link 
   services.xserver.windowManager.i3.enable = true;
