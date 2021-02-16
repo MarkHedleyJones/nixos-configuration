@@ -151,7 +151,7 @@
   services.openssh.enable = true;
   services.gnome3.gnome-keyring.enable = true;
   services.udev.extraRules = ''
-  KERNEL=="i2c-[0-9]*", MODE="0660"  
+  KERNEL=="i2c-[0-9]*", MODE="0666" GROUP="wheel"
   '';
 
   # Open ports in the firewall.
