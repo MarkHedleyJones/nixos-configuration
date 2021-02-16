@@ -44,6 +44,11 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_NZ.UTF-8";
+  i18n.inputMethod = {
+    enabled = "ibus";
+    ibus.engines = with pkgs.ibus-engines; [ mozc ];
+  };
+
   console = {
     font = "Lat2-Terminus16";
     keyMap = "us";
@@ -53,9 +58,9 @@
   services.xserver.enable = true;
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
-  programs.dconf.enable = true;
+
   # Add i3 (with gaps)
-  environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link 
+  environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link
   services.xserver.windowManager.i3.enable = true;
   services.xserver.windowManager.i3.package = pkgs.i3-gaps;
   services.xserver.windowManager.i3.extraPackages = with pkgs; [
@@ -65,10 +70,8 @@
     i3blocks
     polybarFull
   ];
-  
-  
+
   services.xserver.displayManager.defaultSession = "none+i3";
-  
 
   # Configure keymap in X11
   services.xserver.layout = "us";
@@ -88,7 +91,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.mark = {
     isNormalUser = true;
-    extraGroups = [ 
+    extraGroups = [
       "wheel"
       "sudo"
      ]; # Enable ‘sudo’ for the user.
@@ -127,6 +130,8 @@
 
   fonts.fonts = with pkgs; [
     dejavu_fonts
+    ipafont
+    kochi-substitute
     liberation_ttf
     migu
     noto-fonts
@@ -134,6 +139,22 @@
     noto-fonts-emoji
     terminus_font
   ];
+
+  fonts.fontconfig.defaultFonts = {
+    monospace = [
+      "Terminus Regular"
+      "DejaVu Sans Mono"
+      "IPAGothic"
+    ];
+    sansSerif = [
+      "DejaVu Sans"
+      "IPAPGothic"
+    ];
+    serif = [
+      "DejaVu Serif"
+      "IPAPMincho"
+    ];
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -144,6 +165,7 @@
   };
   programs.nm-applet.enable = true;
   programs.seahorse.enable = true;
+
 
   # List services that you want to enable:
 
