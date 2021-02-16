@@ -142,7 +142,7 @@
     enable = true;
     enableSSHSupport = true;
   };
-
+  programs.nm-applet.enable = true;
   programs.seahorse.enable = true;
 
   # List services that you want to enable:
