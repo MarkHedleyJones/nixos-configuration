@@ -126,6 +126,12 @@
   ];
 
   fonts.fonts = with pkgs; [
+    dejavu_fonts
+    liberation_ttf
+    migu
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
     terminus_font
   ];
 
