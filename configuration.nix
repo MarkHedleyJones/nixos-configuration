@@ -124,6 +124,7 @@
     sublime-merge
     sublime3
     tdesktop  # Telegram Desktop
+    termdown
     vim
     wget
   ];
