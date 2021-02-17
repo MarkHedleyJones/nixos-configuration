@@ -100,6 +100,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
 
+  nixpkgs.config.allowBroken = true; # For PCL
+
   environment.systemPackages = with pkgs; [
     arandr
     blender
@@ -119,11 +121,12 @@
     nvidia-docker
     opencv
     pavucontrol
+    pcl                          # Marked as broken, requires allowBroken = true;
     python3
     ranger
     sublime-merge
     sublime3
-    tdesktop  # Telegram Desktop
+    tdesktop                     # Telegram Desktop
     termdown
     vim
     wget
