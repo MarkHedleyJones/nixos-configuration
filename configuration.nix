@@ -148,6 +148,7 @@
       "IPAGothic"
     ];
     sansSerif = [
+      "Noto Sans Regular"
       "DejaVu Sans"
       "IPAPGothic"
     ];
