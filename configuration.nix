@@ -90,8 +90,10 @@
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
+  users.defaultUserShell = pkgs.zsh;
   users.users.mark = {
     isNormalUser = true;
+    shell = pkgs.zsh;
     extraGroups = [
       "wheel"
       "sudo"
@@ -120,6 +122,7 @@
     linuxPackages.ddcci-driver
     lxappearance
     nvidia-docker
+    oh-my-zsh
     opencv
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
@@ -131,6 +134,7 @@
     termdown
     vim
     wget
+    zsh
   ];
 
   fonts.fonts = with pkgs; [
@@ -171,6 +175,16 @@
   };
   programs.nm-applet.enable = true;
   programs.seahorse.enable = true;
+  programs.zsh = {
+    enable = true;
+    promptInit = ""; # Clear this to avoid a conflict with oh-my-zsh
+    interactiveShellInit = ''
+      export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh
+      export ZSH_THEME="lambda"
+      plugins=(git)
+      source $ZSH/oh-my-zsh.sh
+    '';
+  };
 
 
   # List services that you want to enable:
