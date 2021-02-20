@@ -116,6 +116,7 @@
     git
     gnome3.gnome-tweak-tool
     gnome3.meld
+    gnumake
     htop
     ibus-engines.mozc
     inkscape
