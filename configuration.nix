@@ -97,6 +97,7 @@
     extraGroups = [
       "wheel"
       "sudo"
+      "docker"
      ]; # Enable ‘sudo’ for the user.
   };
 
