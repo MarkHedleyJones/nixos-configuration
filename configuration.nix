@@ -119,6 +119,7 @@
     ddcutil
     docker
     firefox
+    ghostwriter                  # Markdown editor
     gimp
     git
     gnome3.gnome-tweak-tool
