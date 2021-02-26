@@ -113,22 +113,22 @@
   nixpkgs.config.allowBroken = true; # For PCL
 
   environment.systemPackages = with pkgs; [
-    arandr
+    arandr                       # Monitor manager
     blender
     clang-tools
-    ddcutil
+    ddcutil                      # Monitor brightness control
     docker
     firefox
     ghostwriter                  # Markdown editor
     gimp
     git
     gnome3.gnome-tweak-tool
-    gnome3.meld
+    gnome3.meld                  # File diff tool
     gnumake
     htop
-    ibus-engines.mozc
+    ibus-engines.mozc            # Japanese language input
     inkscape
-    linuxPackages.ddcci-driver
+    linuxPackages.ddcci-driver   # Monitor brightness control
     lxappearance
     nvidia-docker
     oh-my-zsh
@@ -136,11 +136,11 @@
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
     python3
-    ranger
+    ranger                       # Terminal based file-browser/previewer
     sublime-merge
     sublime3
     tdesktop                     # Telegram Desktop
-    termdown
+    termdown                     # Countdown timer for the terminal
     vim
     wget
     zsh
