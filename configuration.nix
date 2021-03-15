@@ -137,6 +137,7 @@
     nvidia-docker
     oh-my-zsh
     opencv
+    openscad
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
     python3
