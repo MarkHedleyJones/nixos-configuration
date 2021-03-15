@@ -62,6 +62,9 @@
 
   # Add i3 (with gaps)
   environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link
+  environment.variables = {
+    PYTHONPATH = "/home/mark/.local/lib/python3.8/site-packages";
+  };
   services.xserver.windowManager.i3.enable = true;
   services.xserver.windowManager.i3.package = pkgs.i3-gaps;
   services.xserver.windowManager.i3.extraPackages = with pkgs; [
