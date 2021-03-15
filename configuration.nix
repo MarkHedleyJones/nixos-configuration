@@ -129,6 +129,7 @@
     htop
     ibus-engines.mozc            # Japanese language input
     inkscape
+    jq                           # Command-line JSON parser
     linuxPackages.ddcci-driver   # Monitor brightness control
     lxappearance
     nvidia-docker
