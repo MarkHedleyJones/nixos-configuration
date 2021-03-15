@@ -113,6 +113,12 @@
   nixpkgs.config.allowBroken = true; # For PCL
 
   environment.systemPackages = with pkgs; [
+    (python38.withPackages(ps: [
+      ps.ipython
+      ps.numpy
+      ps.opencv4
+      ps.requests
+    ]))
     arandr                       # Monitor manager
     audacity                     # Audio editing software
     awscli                       # Amazon web services CLI interface
@@ -141,7 +147,6 @@
     openscad
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
-    (python38.withPackages(ps: [ ps.ipython ps.numpy ps.opencv4]))
     ranger                       # Terminal based file-browser/previewer
     sqlitebrowser                # GUI for browsing sqlite database files
     sublime-merge
