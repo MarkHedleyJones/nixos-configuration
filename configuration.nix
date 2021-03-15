@@ -186,6 +186,7 @@
     enable = true;
     enableSSHSupport = true;
   };
+  programs.dconf.enable = true;
   programs.nm-applet.enable = true;
   programs.seahorse.enable = true;
   programs.zsh = {
@@ -205,6 +206,7 @@
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
   services.gnome3.gnome-keyring.enable = true;
+  services.udev.packages = with pkgs; [ gnome3.gnome-settings-daemon ];
   services.udev.extraRules = ''
   KERNEL=="i2c-[0-9]*", MODE="0666" GROUP="wheel"
   '';
