@@ -114,6 +114,7 @@
 
   environment.systemPackages = with pkgs; [
     arandr                       # Monitor manager
+    audacity                     # Audio editing software
     blender
     clang-tools
     ddcutil                      # Monitor brightness control
