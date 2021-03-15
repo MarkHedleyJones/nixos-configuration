@@ -158,6 +158,7 @@
     termdown                     # Countdown timer for the terminal
     vim
     wget
+    wireshark
     zsh
   ];
 
