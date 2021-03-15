@@ -141,7 +141,7 @@
     openscad
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
-    python3
+    (python38.withPackages(ps: [ ps.ipython ps.numpy ps.opencv4]))
     ranger                       # Terminal based file-browser/previewer
     sqlitebrowser                # GUI for browsing sqlite database files
     sublime-merge
