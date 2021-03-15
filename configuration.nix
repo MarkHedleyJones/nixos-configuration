@@ -125,6 +125,7 @@
     gnome3.gnome-tweak-tool
     gnome3.meld                  # File diff tool
     gnumake
+    hanazono                     # Japanese font
     htop
     ibus-engines.mozc            # Japanese language input
     inkscape
@@ -148,13 +149,16 @@
 
   fonts.fonts = with pkgs; [
     dejavu_fonts
-    ipafont
-    kochi-substitute
+    ipafont                      # Japanese font
+    kochi-substitute             # Japanese font
     liberation_ttf
-    migu
+    migu                         # Japanese font
     noto-fonts
-    noto-fonts-cjk
+    noto-fonts-cjk               # CJK glyphs for noto
     noto-fonts-emoji
+    rounded-mgenplus             # Japanese font
+    source-han-sans-japanese     # Japanese sans font
+    source-han-serif-japanese    # Japanese serif font
     terminus_font
   ];
 
