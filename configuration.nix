@@ -118,6 +118,7 @@
     clang-tools
     ddcutil                      # Monitor brightness control
     docker
+    docker-compose
     firefox
     ghostwriter                  # Markdown editor
     gimp
