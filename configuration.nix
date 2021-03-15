@@ -138,6 +138,7 @@
     pcl                          # Marked as broken, requires allowBroken = true;
     python3
     ranger                       # Terminal based file-browser/previewer
+    sqlitebrowser                # GUI for browsing sqlite database files
     sublime-merge
     sublime3
     tdesktop                     # Telegram Desktop
