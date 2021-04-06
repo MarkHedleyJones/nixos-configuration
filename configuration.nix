@@ -130,6 +130,7 @@
     ddcutil                      # Monitor brightness control
     docker
     docker-compose
+    ffmpeg
     firefox
     ghostwriter                  # Markdown editor
     gimp
@@ -142,23 +143,31 @@
     ibus-engines.mozc            # Japanese language input
     inkscape
     jq                           # Command-line JSON parser
+    labelImg                     # graphical image annotation tool
     linuxPackages.ddcci-driver   # Monitor brightness control
+    ltunify                      # Tool for working with Logitech Unifying receivers and devices
     lxappearance
+    meshlab
     nvidia-docker
     oh-my-zsh
     opencv
     openscad
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
+    pdftk                        # Tool for removing passwords from pdf-files
     ranger                       # Terminal based file-browser/previewer
+    shellcheck                   # Shell script analysis tool
     sqlitebrowser                # GUI for browsing sqlite database files
     sublime-merge
     sublime3
     tdesktop                     # Telegram Desktop
     termdown                     # Countdown timer for the terminal
+    up                           # tool for writing Linux pipes with instant live preview
     vim
     wget
     wireshark
+    xdotool
+    zip
     zsh
   ];
 
