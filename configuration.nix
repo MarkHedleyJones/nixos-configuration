@@ -220,7 +220,8 @@
     promptInit = ""; # Clear this to avoid a conflict with oh-my-zsh
     interactiveShellInit = ''
       export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh
-      export ZSH_THEME="agnoster"
+      # export ZSH_THEME="simple"
+      export ZSH_THEME="philips"
       plugins=(git)
       source $ZSH/oh-my-zsh.sh
     '';
