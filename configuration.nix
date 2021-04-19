@@ -133,6 +133,7 @@
     ffmpeg
     firefox
     ghostwriter                  # Markdown editor
+    gifsicle
     gimp
     git
     gnome3.gnome-tweak-tool
@@ -155,6 +156,7 @@
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
     pdftk                        # Tool for removing passwords from pdf-files
+    peek                         # GIF screen recorder
     ranger                       # Terminal based file-browser/previewer
     shellcheck                   # Shell script analysis tool
     sqlitebrowser                # GUI for browsing sqlite database files
