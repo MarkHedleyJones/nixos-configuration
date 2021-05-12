@@ -129,6 +129,8 @@
     blender
     cargo                        # Downloads your Rust project's dependencies and builds your project
     clang-tools
+    clipit                       # Lightweight GTK Clipboard Manager
+    compton                      # Fancy effects for your window manager
     ddcutil                      # Monitor brightness control
     docker
     docker-compose
@@ -146,6 +148,7 @@
     gnome3.meld                  # File diff tool
     gnumake
     hanazono                     # Japanese font
+    hsetroot                     # Program to set the color of the background
     htop
     ibus-engines.mozc            # Japanese language input
     inkscape
@@ -175,6 +178,7 @@
     unzip
     up                           # tool for writing Linux pipes with instant live preview
     vim
+    volumeicon                   # A lightweight volume control that sits in your systray
     wget
     wireshark
     xclip                        # Tool to access the X clipboard from a console application
