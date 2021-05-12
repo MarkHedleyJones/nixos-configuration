@@ -231,6 +231,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
+  services.blueman.enable = true;
   services.openssh.enable = true;
   services.gnome3.gnome-keyring.enable = true;
   services.udev.packages = with pkgs; [ gnome3.gnome-settings-daemon ];
