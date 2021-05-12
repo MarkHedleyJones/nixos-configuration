@@ -125,6 +125,7 @@
     arandr                       # Monitor manager
     audacity                     # Audio editing software
     awscli                       # Amazon web services CLI interface
+    black                        # The uncompromising Python code formatter
     blender
     cargo                        # Downloads your Rust project's dependencies and builds your project
     clang-tools
