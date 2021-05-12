@@ -126,16 +126,21 @@
     audacity                     # Audio editing software
     awscli                       # Amazon web services CLI interface
     blender
+    cargo                        # Downloads your Rust project's dependencies and builds your project
     clang-tools
     ddcutil                      # Monitor brightness control
     docker
     docker-compose
+    electrum                     # A lightweight Bitcoin wallet
     ffmpeg
     firefox
+    gcc
     ghostwriter                  # Markdown editor
-    gifsicle
+    gifsicle                     # Tool for creating and editing GIF images
     gimp
     git
+    git-lfs                      # Git extension for versioning large files
+    gitAndTools.gitflow          # Extend git with the Gitflow branching model
     gnome3.gnome-tweak-tool
     gnome3.meld                  # File diff tool
     gnumake
@@ -155,19 +160,23 @@
     openscad
     pavucontrol
     pcl                          # Marked as broken, requires allowBroken = true;
+    pdfsam-basic                 # Multi-platform software designed to extract pages, split, merge, mix and rotate PDF files
     pdftk                        # Tool for removing passwords from pdf-files
     peek                         # GIF screen recorder
     ranger                       # Terminal based file-browser/previewer
+    rustc                        # A safe, concurrent, practical language
     shellcheck                   # Shell script analysis tool
     sqlitebrowser                # GUI for browsing sqlite database files
     sublime-merge
     sublime3
     tdesktop                     # Telegram Desktop
     termdown                     # Countdown timer for the terminal
+    unzip
     up                           # tool for writing Linux pipes with instant live preview
     vim
     wget
     wireshark
+    xclip                        # Tool to access the X clipboard from a console application
     xdotool
     zip
     zsh
