@@ -150,6 +150,7 @@
     gnome3.gnome-tweak-tool
     gnome3.meld                  # File diff tool
     gnumake
+    gparted                      # Graphical disk partitioning tool
     hanazono                     # Japanese font
     hsetroot                     # Program to set the color of the background
     htop
