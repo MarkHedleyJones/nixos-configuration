@@ -54,17 +54,18 @@
     keyMap = "us";
   };
 
-  # Enable the GNOME 3 Desktop Environment.
-  services.xserver.enable = true;
-  services.xserver.dpi = 96;
+  services.xserver = {
+    enable = true;
+    dpi = 96;
+    layout =  "us";
+    xkbOptions = "shift:both_capslock";
+    videoDrivers = [ "nvidia" ];
+  };
+
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome3.enable = true;
+  services.xserver.displayManager.defaultSession = "none+i3";
 
-  # Add i3 (with gaps)
-  environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link
-  environment.variables = {
-    PYTHONPATH = "/home/mark/.local/lib/python3.8/site-packages";
-  };
   services.xserver.windowManager.i3.enable = true;
   services.xserver.windowManager.i3.package = pkgs.i3-gaps;
   services.xserver.windowManager.i3.extraPackages = with pkgs; [
@@ -75,12 +76,11 @@
     polybarFull
   ];
 
-  services.xserver.displayManager.defaultSession = "none+i3";
-
-  # Configure keymap in X11
-  services.xserver.layout = "us";
-  services.xserver.xkbOptions = "shift:both_capslock";
-  services.xserver.videoDrivers = [ "nvidia" ];
+  # Add i3 (with gaps)
+  environment.pathsToLink = [ "/libexec" ]; # due to hardcoded paths in i3blocks, we need to link
+  environment.variables = {
+    PYTHONPATH = "/home/mark/.local/lib/python3.8/site-packages";
+  };
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
