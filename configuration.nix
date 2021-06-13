@@ -102,13 +102,16 @@
   users.defaultUserShell = pkgs.zsh;
   users.users.mark = {
     isNormalUser = true;
+    group = "mark";
     shell = pkgs.zsh;
     extraGroups = [
+      "users"
       "wheel"
       "sudo"
       "docker"
      ]; # Enable ‘sudo’ for the user.
   };
+  users.extraGroups.mark.gid = 1000;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
